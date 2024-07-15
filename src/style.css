@@ -1,0 +1,112 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+#main{
+    position: relative;
+}
+#animation{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.webgl
+{
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+}
+.point
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999999;
+    /* pointer-events: none; */
+}
+
+.point .label
+{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 40px;
+    z-index: 999999;
+    height: 40px;
+    border-radius: 50%;
+    background: #00000077;
+    border: 1px solid #ffffff77;
+    color: #ffffff;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 100;
+    font-size: 14px;
+    cursor: help;
+    transform: scale(0, 0);
+    transition: transform 0.3s;
+}
+#mainn{
+    position: absolute;
+    top: 0;
+    width: 20vh;
+    height: 20vh;
+    z-index: 999999999!important;
+    background: red;
+    left: 0;
+}
+.point .text
+{
+    position: absolute;
+    /* top: 30px;
+    left: -120px; */
+    width: 200px;
+    padding: 20px;
+    border-radius: 4px;
+    background: #00000077;
+    border: 1px solid #ffffff77;
+    color: #ffffff;
+    line-height: 1.3em;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.point:hover .text
+{
+    opacity: 1;
+}
+
+.point.visible .label
+{
+    transform: scale(1, 1);
+}
+
+#page1{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+#page2{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+#page3{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(85, 255, 0);
+}
