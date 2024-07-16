@@ -4,6 +4,7 @@ import * as dat from 'lil-gui'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
 // import gsap from 'gsap'
+Shery.mouseFollower();
 
 function inet(){
     gsap.registerPlugin(ScrollTrigger);

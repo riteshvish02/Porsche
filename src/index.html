@@ -3,19 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>25 - Realistic render</title>
+    <title>Porsche</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
 </head>
 <body>
-   
     <div id="main">
        <div id="animation">
-        <canvas class="webgl"></canvas>
-        <div id="mainn">
-            <button data-color="red">Red</button>
+        <div id="hero">
+            <div id="infoone">
+                <div id="text1">
+                    <h2>Power unit</h2>
+                    <h3>Number of cylinders <span>4</span></h3>
+                    <h3> Bore <span>91,0 mm</span></h3>
+                    <h3>Displacement <span>	1.988 cm³</span></h3>
+                </div>
+                <div id="text2">
+                    <h2>Performance</h2>
+                    <h3>cylinder <span>396cm <sup>3</sup></span></h3>
+                    <h3>transmission <span>FR</span></h3>
+                    <h3>power[kW] <span>200kW</span></h3>
+                    <h3>power[PS] <span>300PS</span></h3>
+                    <h3>Acceleration 0-100 km/h <span>5,1 s</span></h3>
+                    <h3>top speed <span>275 km/h</span></h3>
+                   
+                </div>
+                <div id="logos">
+                    <div id="part">
+                     <img src="../static/images/icons8-fuel-50.png" alt="">
+                      <h3>
+                         9,7 – 8,9 <br>
+                         l/100 km
+                     </h3>
+                    </div>
+                    <div id="part">
+                     <img src="../static/images/icons8-co2-50 (1).png" alt="">
+                     <h3>
+                         220 – 201 <br>
+                         g/km
+                     </h3>
+                    </div>
+                    <div id="part">
+                     <img src="../static/images/icons8-safe-50.png" alt="">
+                     <h3>
+                         G <br>
+                         Class
+                     </h3>
+                    </div>
+                 </div>
+            </div>
+            <div id="infotwo">
+                <div id="text1">
+                    <h2>Power unit</h2>
+                    <h3>Number of cylinders <span>4</span></h3>
+                    <h3> Bore <span>91,0 mm</span></h3>
+                </div>
+                <div id="text2">
+                    <h2>Performance</h2>
+                    <h3>cylinder <span>396cm <sup>3</sup></span></h3>
+                    <h3>transmission <span>FR</span></h3>
+                    <h3>power[kW] <span>200kW</span></h3>
+                    <h3>power[PS] <span>300PS</span></h3>
+                    <h3>Acceleration 0-100 km/h <span>5,1 s</span></h3>
+                    <h3>top speed <span>275 km/h</span></h3>
+                </div>
+            </div>
+        </div>
+        <!-- <canvas class="webgl"></canvas> -->
+        <!-- <div id="mainn">
+        <button data-color="red">Red</button>
         <button data-color="green">Green</button>
         <button data-color="yellow">Blue</button>
-        </div>
+        </div> -->
         <div class="point point-0">
             <div class="label">1</div>
             <div class="text">Front and top screen with HUD aggregating terrain and battle informations.</div>
@@ -29,7 +88,9 @@
             <div class="text">Cameras supporting night vision and heat vision with automatic adjustment.</div>
         </div>
        </div>
-        <div id="page1"></div>
+        <div id="page1">
+            <img class="img" src="https://images.unsplash.com/photo-1709148910322-5a58adaf0e9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8" alt="">
+        </div>
         <div id="page2"></div>
         <div id="page3"></div>
         <div id="page4"></div>
@@ -43,5 +104,8 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
     integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
 </body>
 </html>
